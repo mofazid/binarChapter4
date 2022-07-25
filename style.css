@@ -24,7 +24,7 @@ body{
 }
 
 .row {
-	margin: 5% 20% 0px 20%;
+	margin: auto;
 	display: flex;
 }
 
@@ -42,22 +42,55 @@ body{
 }
 
 .vs {
+	display: flex;
 	font-size: 100px;
 	color: #BD0000;
-	padding: 20px;
+	justify-content: center;
 }
- 
+
+.result {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	background-color: #4C9654;
+  rotate: -30deg;
+	width: 230px;
+	height: 150px;
+	border-radius: 10px;
+	padding: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
 .refresh {
-	margin-left: 50%;
-	margin-right: 50%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
 }
+
+.refresh:hover {
+	animation: myrotate 2s infinite;
+}
+
+@keyframes myrotate {
+  30% {transform: rotate(-360deg);}
+}
+
 
 .batu:hover, .gunting:hover, .kertas:hover {
   background-color: #C4C4C4;
 	border-radius: 30px;
+	animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(-15deg);}
 }
 
 .picked {
 	background-color: #C4C4C4;
 	border-radius: 30px;
 }
+
