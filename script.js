@@ -34,8 +34,12 @@ let play = () => {
     pilihanUser = event.target.className;
     pilihanCom = generateComputerOption()
 
+    console.log("PLAYER = ",pilihanUser)
+    console.log("COM = ", pilihanCom)
+
     if (pilihanUser == pilihanCom) {
       $(".vs").replaceWith(`<h1 class="result">DRAW</h1>`)
+      console.log("Seri")
     }
     
     if (
@@ -44,6 +48,7 @@ let play = () => {
       pilihanUser == "kertas" && pilihanCom == "batu"
     ) {
       $(".vs").replaceWith(`<h1 class="result">PLAYER 1 WIN</h1>`)
+      console.log("PLAYER 1 Menang")
     }
 
     if (
@@ -52,6 +57,7 @@ let play = () => {
       pilihanUser == "kertas" && pilihanCom == "gunting"
     ) {
       $(".vs").replaceWith(`<h1 class="result">COM <br> WIN</h1>`)
+      console.log("COM Menang")
     }
 
     $(event.target).css({
