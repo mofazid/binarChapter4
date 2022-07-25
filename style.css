@@ -44,6 +44,7 @@ body{
 .vs {
 	font-size: 100px;
 	color: #BD0000;
+	padding: 20px;
 }
  
 .refresh {
@@ -53,5 +54,10 @@ body{
 
 .batu:hover, .gunting:hover, .kertas:hover {
   background-color: #C4C4C4;
+	border-radius: 30px;
+}
+
+.picked {
+	background-color: #C4C4C4;
 	border-radius: 30px;
 }
